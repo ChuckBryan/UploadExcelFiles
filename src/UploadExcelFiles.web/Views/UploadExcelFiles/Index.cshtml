@@ -1,0 +1,13 @@
+﻿
+<h5>@ViewBag.ElapsedTime</h5>
+<hr/>
+<form asp-action="Upload" enctype="multipart/form-data">
+  @*note: enctype must be set to 'multipart/form-data' or uploading doesn't work*@
+  <div class="form-group">
+    <input type="file" id="fileInfo" name="fileInfo"/>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success">Upload</button>
+  </div>
+</form>
+
